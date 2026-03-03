@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mehndi Ki Khushbu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .inner-page-header {
+            padding-top: calc(var(--header-height) + 60px);
+            padding-bottom: 60px;
+            background-color: var(--color-bg-alt);
+            text-align: center;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .about-image img {
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Mehndi Ki <span>Khushbu</span>
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html">YouTube</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="inner-page-header">
+            <div class="container">
+                <h1 class="section-title">The Artist Behind the Art</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container about-content">
+                <div class="about-image">
+                    <img src="images/bridal_mehndi_1772016141203.png"
+                        alt="Mehndi Artist working on beautiful bridal henna">
+                </div>
+                <div class="about-text">
+                    <span class="section-subtitle">Our Journey</span>
+                    <h2>Bringing Tradition to Life</h2>
+                    <p>Hello! I am the passionate henna artist behind <strong>Mehndi Ki Khushbu</strong>. For years, I
+                        have
+                        been transforming hands into canvases, blending traditional motifs with modern aesthetics.</p>
+                    <p>What started as a small passion has grown into a beautiful community. With over <strong>1 Million
+                            subscribers on YouTube</strong>, I share tutorials, tips, and my intricate design process
+                        with
+                        the world.</p>
+                    <p>My designs specialize in Bridal elegance, festive Eid patterns, and stylish party looks. Every
+                        cone
+                        of henna is a tool to make your special days even more memorable.</p>
+                    <div style="margin-top: 30px;">
+                        <a href="gallery.html" class="btn btn-primary" style="margin-right: 15px;">View My Work</a>
+                        <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" class="btn btn-outline"><i
+                                class="fab fa-youtube"></i> Visit Channel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Banner -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>1M+</h3>
+                        <p>YouTube Subscribers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>220k+</h3>
+                        <p>Facebook Followers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10 Years</h3>
+                        <p>Of Dedication</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-logo">Mehndi Ki Khushbu</h2>
+                <div class="footer-tagline">Mehndi ki Khushbu: Where Tradition Meets Art.</div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Tutorials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mehndi ki Khushbu | Designed with Love</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

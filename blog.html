@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mehndi Ki Khushbu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .inner-page-header {
+            padding-top: calc(var(--header-height) + 60px);
+            padding-bottom: 60px;
+            background-color: var(--color-bg-alt);
+            text-align: center;
+        }
+
+        .blog-masonry {
+            column-count: 3;
+            column-gap: 30px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 992px) {
+            .blog-masonry {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-masonry {
+                column-count: 1;
+            }
+        }
+
+        .blog-card {
+            background-color: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            break-inside: avoid;
+            margin-bottom: 30px;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 25px;
+        }
+
+        .blog-meta {
+            font-size: 14px;
+            color: var(--color-secondary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .blog-title {
+            color: var(--color-primary);
+            font-size: 24px;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            font-family: var(--font-heading);
+            /* Playfair Display */
+        }
+
+        .blog-excerpt {
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* Updated to explicitly 2 lines */
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .read-more {
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color var(--transition-fast);
+        }
+
+        .read-more:hover {
+            color: var(--color-secondary);
+        }
+
+        .read-more i {
+            font-size: 12px;
+            transition: transform var(--transition-fast);
+        }
+
+        .read-more:hover i {
+            transform: translateX(3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Mehndi Ki <span>Khushbu</span>
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html">YouTube</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="inner-page-header">
+            <div class="container animate-on-scroll">
+                <h1 class="section-title">The Artist's Journal</h1>
+                <p style="max-width: 600px; margin: 20px auto 0; color: var(--color-text-light);">Insights, tips, and
+                    trends
+                    from the world of modern and traditional henna artistry.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="blog-masonry">
+
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card animate-on-scroll hover-glow">
+                        <img src="images/bridal_mehndi_1772016141203.png" alt="Bridal Mehndi Trends 2026 Overview"
+                            class="blog-image" style="height: auto; max-height: 350px;">
+                        <div class="blog-content">
+                            <div class="blog-meta">Trends • Feb 24, 2026</div>
+                            <h2 class="blog-title">Top 5 Bridal Mehndi Trends for 2026</h2>
+                            <p class="blog-excerpt">From reverse negative space to detailed portrait mehndi, explore
+                                what
+                                brides are asking for this wedding season.</p>
+                            <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="blog-card animate-on-scroll hover-glow" style="animation-delay: 0.1s;">
+                        <!-- Intentionally changing image heights to manifest Masonry effect -->
+                        <img src="images/mehndi_slider3_1772017386917.png" alt="Deep Mahogany Henna Stain Examples"
+                            class="blog-image" style="height: 250px;">
+                        <div class="blog-content">
+                            <div class="blog-meta">Tips • Jan 15, 2026</div>
+                            <h3 class="blog-title">The Ultimate Guide to a Dark Henna Stain</h3>
+                            <p class="blog-excerpt">Discover the ancient secrets and modern aftercare tricks to achieve
+                                the
+                                deepest mahogany henna stain.</p>
+                            <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 3 -->
+                    <div class="blog-card animate-on-scroll hover-glow" style="animation-delay: 0.2s;">
+                        <img src="images/mehndi_slider1_1772017320580.png" alt="Minimalist Vine Patterns for Mehndi"
+                            class="blog-image" style="height: auto; max-height: 400px;">
+                        <div class="blog-content">
+                            <div class="blog-meta">Inspiration • Dec 10, 2025</div>
+                            <h3 class="blog-title">Embracing Minimalist Henna Vibes</h3>
+                            <p class="blog-excerpt">Sometimes, less is more. How minimalist geometric and vine patterns
+                                are
+                                taking over modern party scenes.</p>
+                            <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 4 -->
+                    <div class="blog-card animate-on-scroll hover-glow" style="animation-delay: 0.3s;">
+                        <img src="images/mehndi_slider2_1772017353486.png" alt="Beautiful Organic Henna Design Patterns"
+                            class="blog-image" style="height: 200px;">
+                        <div class="blog-content">
+                            <div class="blog-meta">Care • Nov 05, 2025</div>
+                            <h3 class="blog-title">Why Organic Henna is the Only Choice</h3>
+                            <p class="blog-excerpt">Uncover the dangers of chemical 'black' henna and why our 100%
+                                natural,
+                                organic paste is safe and stunning.</p>
+                            <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 5 (Added for masonry demonstration) -->
+                    <div class="blog-card animate-on-scroll hover-glow" style="animation-delay: 0.4s;">
+                        <img src="images/bridal_mehndi_1772016141203.png"
+                            alt="Pre-Bridal Mehndi Skin Prep Demonstration" class="blog-image"
+                            style="height: auto; max-height: 280px;">
+                        <div class="blog-content">
+                            <div class="blog-meta">Bridal • Oct 20, 2025</div>
+                            <h3 class="blog-title">Preparing Your Skin Before the Mehndi Night</h3>
+                            <p class="blog-excerpt">Ensure your skin is perfectly primed to absorb the henna paste for a
+                                long-lasting and rich colored outcome.</p>
+                            <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-logo">Mehndi Ki Khushbu</h2>
+                <div class="footer-tagline">Mehndi ki Khushbu: Where Tradition Meets Art.</div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Tutorials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mehndi ki Khushbu | Designed with Love</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

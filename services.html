@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Mehndi Ki Khushbu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .inner-page-header {
+            padding-top: calc(var(--header-height) + 60px);
+            padding-bottom: 60px;
+            background-color: var(--color-bg-alt);
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform var(--transition-normal);
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .service-title {
+            color: var(--color-primary);
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-family: var(--font-heading);
+        }
+
+        .service-desc {
+            color: var(--color-text-light);
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .service-price {
+            font-size: 20px;
+            color: var(--color-secondary);
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .service-features li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--color-text);
+        }
+
+        .service-features li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Mehndi Ki <span>Khushbu</span>
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html">YouTube</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="inner-page-header">
+            <div class="container animate-on-scroll">
+                <h1 class="section-title">Our Premium Services</h1>
+                <p style="max-width: 600px; margin: 20px auto 0; color: var(--color-text-light);">Choose from our range
+                    of
+                    bespoke henna packages tailored for your unforgettable events.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="services-grid">
+
+                    <!-- Pricing Card 1: Basic Henna -->
+                    <div class="service-card animate-on-scroll hover-glow">
+                        <img src="images/mehndi_slider1_1772017320580.png" alt="Basic Henna design on hands"
+                            class="service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Basic Henna</h3>
+                            <p class="service-desc">Simple, elegant designs for both hands. Perfect for casual events or
+                                guests.</p>
+                            <span class="service-price">Starting from $25</span>
+
+                            <ul class="service-features">
+                                <li>Both hands (palms only)</li>
+                                <li>Simple trails or mandalas</li>
+                                <li>Quick-dry organic henna</li>
+                                <li>Approx. 30 mins session</li>
+                            </ul>
+                            <a href="#booking-section" class="btn btn-outline" style="width: 100%;">Select Package</a>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Card 2: Party Special -->
+                    <div class="service-card animate-on-scroll hover-glow"
+                        style="animation-delay: 0.2s; border: 2px solid var(--color-secondary); transform: scale(1.02); z-index: 1;">
+                        <div
+                            style="background: var(--color-secondary); color: white; padding: 5px; font-weight: bold; text-align: center; text-transform: uppercase; font-size: 12px; letter-spacing: 2px;">
+                            Most Popular</div>
+                        <img src="images/mehndi_slider2_1772017353486.png"
+                            alt="Party Special Mehndi covering front and back hands" class="service-image"
+                            style="height: 220px;">
+                        <div class="service-content">
+                            <h3 class="service-title">Party Special</h3>
+                            <p class="service-desc">Front and back full coverage. Ideal for Eid, Diwali, or close family
+                                members.</p>
+                            <span class="service-price">Starting from $65</span>
+
+                            <ul class="service-features">
+                                <li>Both hands (front & back)</li>
+                                <li>Intricate traditional patterns</li>
+                                <li>Finger detailing included</li>
+                                <li>Pre-event consultation</li>
+                            </ul>
+                            <a href="#booking-section" class="btn btn-primary" style="width: 100%;">Select Package</a>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Card 3: Premium Bridal -->
+                    <div class="service-card animate-on-scroll hover-glow" style="animation-delay: 0.4s;">
+                        <img src="images/bridal_mehndi_1772016141203.png"
+                            alt="Premium Bridal Henna extending to full arms" class="service-image">
+                        <div class="service-content">
+                            <h3 class="service-title">Premium Bridal</h3>
+                            <p class="service-desc">Full arms and feet with intricate storytelling mappings of your love
+                                story.</p>
+                            <span class="service-price">Starting from $150</span>
+
+                            <ul class="service-features">
+                                <li>Both arms up to elbows</li>
+                                <li>Both feet up to calves</li>
+                                <li>Custom figures / portraits</li>
+                                <li>Premium aftercare kit</li>
+                            </ul>
+                            <a href="#booking-section" class="btn btn-outline" style="width: 100%;">Select Package</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Inquiry Form Section -->
+        <section id="booking-section" class="section animate-on-scroll" style="background-color: var(--color-bg-alt);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Reserve Your Spot</span>
+                    <h2 class="section-title">Booking Inquiry</h2>
+                </div>
+
+                <div class="booking-form-container">
+                    <form class="minimal-form"
+                        onsubmit="event.preventDefault(); alert('Booking Inquiry Submitted Successfully!');">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date">Event Date</label>
+                                <input type="date" id="event-date" name="event-date" required>
+                            </div>
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label for="location">Location / Venue</label>
+                                <input type="text" id="location" name="location" placeholder="City or Event Venue"
+                                    required>
+                            </div>
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label for="package">Select Package</label>
+                                <div class="select-wrapper">
+                                    <select id="package" name="package" required>
+                                        <option value="" disabled selected>Choose a package type...</option>
+                                        <option value="basic">Basic Henna ($25+)</option>
+                                        <option value="party">Party Special ($65+)</option>
+                                        <option value="bridal">Premium Bridal ($150+)</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down select-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-logo">Mehndi Ki Khushbu</h2>
+                <div class="footer-tagline">Mehndi ki Khushbu: Where Tradition Meets Art.</div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Tutorials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mehndi ki Khushbu | Designed with Love</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

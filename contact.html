@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mehndi Ki Khushbu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .inner-page-header {
+            padding-top: calc(var(--header-height) + 60px);
+            padding-bottom: 60px;
+            background-color: var(--color-bg-alt);
+            text-align: center;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .contact-info h3 {
+            color: var(--color-secondary);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-item i {
+            font-size: 24px;
+            color: var(--color-secondary);
+            margin-top: 5px;
+        }
+
+        .info-item div p {
+            margin: 0;
+            color: #ddd;
+        }
+
+        .info-item div h4 {
+            color: var(--color-white);
+            margin-bottom: 5px;
+            font-family: var(--font-body);
+            font-size: 18px;
+        }
+
+        .contact-form {
+            padding: 20px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 16px;
+            background-color: var(--color-white);
+            transition: all var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(122, 31, 61, 0.1);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            height: 150px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Mehndi Ki <span>Khushbu</span>
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html">YouTube</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="inner-page-header">
+            <div class="container">
+                <h1 class="section-title">Get In Touch</h1>
+                <p style="max-width: 600px; margin: 20px auto 0; color: var(--color-text-light);">Have a question or
+                    want to
+                    book an appointment for your special day? Fill out the form below or reach us through our social
+                    channels.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-container">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p style="margin-bottom: 40px; color: #ddd;">Follow us on our journey or get in touch for business
+                        and
+                        booking inquiries.</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-paper-plane"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>booking@mehndikikhushbu.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fab fa-youtube"></i>
+                        <div>
+                            <h4>YouTube</h4>
+                            <p>youtube.com/@MehndiKiKhushbu<br>1 Million Subscriber Community</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fab fa-facebook-f"></i>
+                        <div>
+                            <h4>Facebook</h4>
+                            <p>facebook.com/MehndiKiKhushbu<br>220k Followers</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <h4 style="color: var(--color-white); font-family: var(--font-body); margin-bottom: 15px;">
+                            Follow
+                            our socials:</h4>
+                        <div class="social-icons">
+                            <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://share.google/8nifnsufXzD9eTUDA" target="_blank"
+                                aria-label="Google My Business"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3
+                        style="font-size: 28px; color: var(--color-primary); margin-bottom: 25px; font-family: var(--font-heading);">
+                        Send a Message</h3>
+                    <form action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Oops! This is a demo form. Contact functionality must be implemented in the backend.');">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="">Select Inquiry Type</option>
+                                <option value="bridal">Bridal Booking</option>
+                                <option value="party">Party / Event Booking</option>
+                                <option value="collab">Business / Sponsorship Collab</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message or Details" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-logo">Mehndi Ki Khushbu</h2>
+                <div class="footer-tagline">Mehndi ki Khushbu: Where Tradition Meets Art.</div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Tutorials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mehndi ki Khushbu | Designed with Love</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

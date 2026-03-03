@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Tutorials - Mehndi Ki Khushbu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .inner-page-header {
+            padding-top: calc(var(--header-height) + 60px);
+            padding-bottom: 60px;
+            background-color: var(--color-bg-alt);
+            text-align: center;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+        }
+
+        .video-item {
+            background-color: var(--color-white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform var(--transition-normal);
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-info {
+            padding: 20px;
+        }
+
+        .video-info h3 {
+            font-family: var(--font-body);
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--color-text);
+        }
+
+        .video-info p {
+            color: var(--color-text-light);
+            font-size: 15px;
+        }
+
+        @media (max-width: 480px) {
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .subscribe-banner {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 60px;
+        }
+
+        .subscribe-banner h2 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .subscribe-banner p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Mehndi Ki <span>Khushbu</span>
+            </a>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="videos.html" class="active">YouTube</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="inner-page-header">
+            <div class="container">
+                <h1 class="section-title">Video Tutorials</h1>
+                <p style="max-width: 600px; margin: 20px auto 0; color: var(--color-text-light);">Learn exactly how we
+                    create these intricate designs. Watch full tutorials on our YouTube channel.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="videos-grid">
+                    <!-- Video 1 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/o9zlhizdVh0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Latest Bridal Mehndi Tutorial</h3>
+                            <p>Step-by-step guide to applying complex bridal patterns with flawless finish.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/jrUmdb_kkbk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Quick 5-Minute Eid Design</h3>
+                            <p>Perfect for beginners. Create a stunning Eid design in just five minutes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/w7HCeCWi7RE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Tips & Tricks: Dark Henna Stain</h3>
+                            <p>Learn my secret recipe and aftercare tips to get the darkest mahogany red henna stain
+                                possible.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="video-item">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/cqkj0LTEj5c" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3>Modern Gulf / Arabic Patterns</h3>
+                            <p>Bold outlines and delicate shading. Creating contemporary Arabic designs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Shorts Section -->
+                <div class="section-header" style="margin-top: 80px; margin-bottom: 40px;">
+                    <span class="section-subtitle">Trending Shorts</span>
+                    <h2 class="section-title">Quick Highlights</h2>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;">
+                    <!-- Short 1 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/o9zlhizdVh0" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 2 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/jrUmdb_kkbk" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 3 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/w7HCeCWi7RE" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 4 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/cqkj0LTEj5c" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 5 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/IbU-Cjilo5s" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 6 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/J1WqBhN6feg" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 7 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/BZgcUHPUO4E" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 8 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/eTAQziM5Cgc" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 9 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/fG0kOffd4PA" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 10 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/DBdXFSx4w8I" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 11 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/grqZlh6HJ0M" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 12 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/U9xfAJiXx7g" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 13 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/GrBA-KOvVec" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 14 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/i8ZwVYrSM6A" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 15 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/VmCDdyK7sPY" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 16 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/vsrJns2MSBI" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 17 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/qNvwNZkZAnY" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 18 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/JhMmXUmku40" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 19 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/gf9xZpRQjnc" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Short 20 -->
+                    <div class="video-item hover-glow">
+                        <div style="position: relative; padding-bottom: 177.77%; height: 0; overflow: hidden;">
+                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                src="https://www.youtube.com/embed/inFqlZsbUMc" title="YouTube Short" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="subscribe-banner">
+                    <h2>Join Our 1M+ Family</h2>
+                    <p>Don't miss out on weekly tutorials, artistic inspiration, and the magic of henna art.</p>
+                    <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" class="btn btn-outline"
+                        style="border-color: white; color: white; background: transparent;">
+                        <i class="fab fa-youtube"></i> Subscribe Now
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <h2 class="footer-logo">Mehndi Ki Khushbu</h2>
+                <div class="footer-tagline">Mehndi ki Khushbu: Where Tradition Meets Art.</div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Tutorials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.youtube.com/@MehndiKiKhushbu" target="_blank" aria-label="YouTube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mehndi ki Khushbu | Designed with Love</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
