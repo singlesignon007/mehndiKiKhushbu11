@@ -190,8 +190,8 @@
                         <!-- FormSubmit Hidden Utility Fields -->
                         <!-- Ensure there is no captcha (optional, but good for user experience) -->
                         <input type="hidden" name="_captcha" value="false">
-                        <!-- Redirect user to a thank you page or back to home (optional) -->
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                        <!-- Redirect user to a thank you page -->
+                        <input type="hidden" name="_next" id="next_url" value="">
                         <!-- Email Subject -->
                         <input type="hidden" name="_subject" value="New Mehndi Booking Request!">
                         <!-- Auto-reply to the user who left their email -->
@@ -329,6 +329,14 @@
             const dd = String(tomorrow.getDate()).padStart(2, '0');
 
             dateInput.min = `${yyyy}-${mm}-${dd}`;
+
+            // Dynamically set the FormSubmit redirect URL to our thankyou.html page
+            const nextUrlInput = document.getElementById('next_url');
+            if (nextUrlInput) {
+                let currentPath = window.location.pathname;
+                let basePath = currentPath.substring(0, currentPath.lastIndexOf('/') + 1);
+                nextUrlInput.value = window.location.origin + basePath + 'thankyou.html';
+            }
         });
     </script>
 </body>
