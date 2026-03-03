@@ -477,37 +477,41 @@ header {
 footer {
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 40px 0 15px;
+  padding: 20px 0 10px;
   border-top: 4px solid var(--color-secondary);
 }
 
 .footer-top {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border-bottom: 1px solid rgba(247, 231, 206, 0.2);
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .footer-logo {
   font-family: var(--font-heading);
-  font-size: 26px;
-  color: var(--color-secondary);
+  font-size: 24px;
   margin-bottom: 5px;
+  background: linear-gradient(45deg, #F7E7CE, #D4AF37, #FFFFFF, #F7E7CE);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .footer-tagline {
   color: var(--color-secondary-light);
   font-family: var(--font-heading);
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 25px;
+  gap: 15px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -516,14 +520,14 @@ footer {
 .footer-newsletter h4 {
   color: var(--color-secondary);
   font-family: var(--font-heading);
-  font-size: 18px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 }
 
 .footer-links ul li {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .footer-links ul li a {
@@ -575,13 +579,13 @@ footer {
 .newsletter-form input {
   width: 90%;
   max-width: 250px;
-  padding: 10px 15px;
-  border-radius: 25px;
+  padding: 8px 15px;
+  border-radius: 20px;
   border: 1px solid rgba(247, 231, 206, 0.4);
   background: rgba(255, 255, 255, 0.05);
   color: var(--color-white);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .newsletter-form input::placeholder {
@@ -597,14 +601,14 @@ footer {
 .newsletter-form button {
   width: 90%;
   max-width: 250px;
-  padding: 10px;
-  border-radius: 25px;
+  padding: 8px;
+  border-radius: 20px;
   border: none;
   background-color: var(--color-secondary);
   color: var(--color-primary);
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all var(--transition-fast);
@@ -618,11 +622,11 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 10px;
   border-top: 1px solid rgba(247, 231, 206, 0.2);
   color: rgba(255, 255, 255, 0.6);
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
 
 /* --- Responsive --- */
