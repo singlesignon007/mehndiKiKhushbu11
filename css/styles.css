@@ -110,6 +110,12 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  transition: text-shadow var(--transition-normal);
+}
+
+.logo:hover {
+  text-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
 }
 
 .logo span {
@@ -490,13 +496,20 @@ footer {
 
 .footer-logo {
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 5px;
   background: linear-gradient(45deg, #F7E7CE, #D4AF37, #FFFFFF, #F7E7CE);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  filter: drop-shadow(0 0 8px rgba(247, 231, 206, 0.5));
+  transition: filter var(--transition-normal);
+}
+
+.footer-logo:hover {
+  filter: drop-shadow(0 0 15px rgba(247, 231, 206, 0.9));
 }
 
 .footer-tagline {
